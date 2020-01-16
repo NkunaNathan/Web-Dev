@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>The Calculator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link href="styles.css" rel="stylesheet">
+<style type="text/css">
+body {font-family: arial, sans-serif; 
+font-size: 150%;
+background-color: red;}
+h1 {border-bottom : solid 1px;}
+p {margin-right: 30px;
+color: black;}
+</style>
+<script>
+var defaultvalue = "";
+function calculations(value){
+	defaultvalue += value;
+	document.forms[0].userInput.value = defaultvalue;
+}
+</script>
+</head>
+<body>
+<h1>Calculator</h1>
+
+<form action = "">
+<p>
+
+<input type ="text" name = "userInput" const value = '0' disabled style = "width: 217px" color ="blue" readonly = true/></br>
+<input type = "button" name = "AC" style = "width: 50px" value = "AC" onclick = 'reset()' />
+<input type= "button" name = "+/-" style = "width: 50px" value = "+/-" onclick = "document.forms[0].input.value = '';
+inputString = ''"/>
+<input type = "button" name = "percent" style = "width: 50px" value = "%" onclick/>
+<input type = "button" name = "div" style = "width: 50px" value = "/" onclick = "calculations('/')" />
+<br>
+<input type = "button" name = "seven" style= "width: 50px" value= "7" onclick = "calculations('7')"/>
+<input type = "button" name = "eight" style = "width: 50px" value = "8" onclick = "calculations('8')" />
+<input type = "button" name = "nine" style = "width: 50px" value = "9" onclick = "calculations('9')" />
+<input type = "button" name = "multiple" style = "width: 50px" value = "*" onclick = "calculations('*')" />
+<br>
+<input type = "button" name = "four" style = "width: 50px" value = "4" onclick = "calculations('4')" />
+<input type = "button" name = "five" style = "width: 50px" value = "5" onclick = "calculations('5')" />
+<input type = "button" name = "six" style = "width: 50px" value = "6" onclick = "calculations('6')" />
+<input type = "button" name = "subtract" style = "width: 50px" value = "-" onclick = "calculations('-')" />
+<br>
+<input type = "button" name = "one" style = "width: 50px" value = "1" onclick = "calculations('1')" />
+<input type = "button" name = "two" style = "width: 50px" value = "2" onclick = "calculations('2')" />
+<input type = "button" name = "three" style = "width: 50px" value = "3" onclick = "calculations('3')" />
+<input type = "button" name = "add" style = "width: 50px" value = "+" onclick = "calculations('+')" />
+<br>
+<input type = "button" name = "zero" style = "width: 106px" value = "0" onclick = "calculations('0')" />
+<input type = "button" name = "point" style = "width: 50px" value = "," onclick = "calculations(',')" />
+<input type = "button" name = "equals" style = "width: 50px" value = "=" onclick = "document.forms[0].userInput.value = 
+eval(defaultvalue); defaultvalue = ''" />
+</p>
+</form>
+</body>
+
+</html>
+<footer>Developed by Nkhuna</footer>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--reference w3school & youTube & e-books-->
+<!--Images from wikipedia-->
+<!--used notepad++-->
+<title>Online_Store</title>
+<link rel= "shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/7/75/Colourful_shopping_carts.jpg" type="image/x-icon" sizes="16x16"/>
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="wrapper">
+<div id="header">
+<div id="subheader">
+<div class="container">
+<a href="#"><span style ="color: red">Today's Deals</span></a>
+<a href="#">Help & Contact</a>
+<a href="#">sell</a>
+<a href="#">careers</a>
+<a href="#">about</a>
+<a href="#">Home</a>
+</div>
+</div>
+<!--Main header-->
+<div id="main-header">
+<!--creating a logo-->
+<div id="e-logo">
+	<img src="https://upload.wikimedia.org/wikipedia/commons/0/09/BadSalzdetfurthBadenburgerStr060529.jpg"
+	alt="logo" style="width:80px;height:50px;">
+</div>
+<!--search area-->
+<div id= "search">
+<!--form area-->
+	<form action ="">
+		<!--selection-->
+		<select class="select-button" name="All">
+		<option selected = "selected" value="">All</option>
+		<option value = "All Departments">All Departments</option>
+		<option value = "Arts & Crafts">Arts & Crafts</option>
+		<option value = "Automotive">Automotive</option>
+		<option value = "Babies">Babies</option>
+		<option value = "Beauty & Personal Care">Beauty & Personal Care</option>
+		<option value = "Books">Books</option>
+		<option value = "Computer">Computer</option>
+		<option value = "Digital Music">Digital Music</option>
+		<option value = "Electronics">Electronics</option>
+		<option value = "Women's Fashion">Women's Fashion</option>
+		<option value = "Men's Fashion">Man's Fashion</option>
+		<option value = "Girl's Fashion">Girl's Fashion</option>
+		<option value = "Boy's Fashion">Boy's Fashion</option>
+		<option value = "Deals">Deals</option>
+		<option value = "Health & Household">Health & Household</option>
+		<option value = "Home & Kitchen">Home & Kitchen</option>
+		<option value = "Scientific">Scientific</option>
+		<option value = "Software">Software</option>
+		<option value = "Sports & Outdoor">Sports & Outdoor</option>
+		<option value = "Tools & Home Improvement">Tools & Home Improvement</option>
+		<option value = "Toys & Games">Toys & Games</option>
+		</select>
+		<!--end of selection-->
+		<!--search-box and button-->
+		<input class= "search-box" type = "text" name = "toSearch" placeholder = "Search for more">
+		<input class= "search-button" type = "submit" name = "submit" value = "search">
+		<!--end of search-box and button-->
+	</form>
+</div>
+<!--end of Search-->
+<!--start User menu and card-->
+<!-- must put something in here-->
+<!--end of the user menu-->
+</div>
+</div>
+<!--navigation--->
+<div id = "navigation">
+<nav>
+<a href="#">Home</a>
+<a href="#">Save</a>
+<a href="#">Discounted</a>
+<a href="#">Deals</a>
+<a href="#">Hi Sign Account & Lists</a>
+<a href="#">Orders</a>
+<a href="#">Cart</a></nav>
+</div>
+<!--end of navigation-->
+<!--banner slider-->
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/0/0d/Red_lingerie_from_Victoria%27s_Secret.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Swatch_Irony_Charcoal_Suit.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Miranda_Kerr_%288450849974%29.jpg" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<!--removed br-->
+<!--images leaving out the dot
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>-->
+<div class ="categories-container">
+<!--Creating categories---->
+<div id = "Heading-lock">
+<h2>Explore popular categories</h2>
+</div>
+<!--Done creating categories-->
+<!--type 1-->
+<a href="#">
+<div class = "cat-box">
+<img src =  "https://upload.wikimedia.org/wikipedia/commons/7/7b/Bristol.zoo.crocskin.handbag.arp.jpg" alt = "Female Accessories" style="width:180px;height:180px;">
+<span>Female Accessories</span>
+</div>
+</a>
+<!--type 2-->
+<a href="#">
+<div class = "cat-box">
+<img src =  "https://upload.wikimedia.org/wikipedia/commons/0/0e/Fotos_produzidas_pelo_Senado_%2830554309793%29.jpg" alt = "Deals & Promotions" style="width:180px;height:180px;">
+<span>Deals & Promotions</span>
+</div>
+</a>
+<!--type 3-->
+<a href="#">
+<div class = "cat-box">
+<img src =  "https://upload.wikimedia.org/wikipedia/commons/6/67/Breville.jpg" alt = "Top Kitchen Appliances" style="width:180px;height:180px;">
+<span>Top Kitchen Appliances</span>
+</div>
+</a>
+<!--type 4-->
+<a href="#">
+<div class = "cat-box">
+<img src =  "https://upload.wikimedia.org/wikipedia/commons/c/c3/One_For_the_Suits.jpg" alt = "Male Fashion" style="width:180px;height:180px;">
+<span>Male Fashion</span>
+</div>
+</a>
+<!--type 5-->
+<a href="#">
+<div class = "cat-box">
+<button type="button" value="Sign in" style="background-color:red; height:50px; font-size: 14px; font-size:Impact, Charcoal, sans-serif;">Sign in for the best experience</button>
+</div>
+</a>
+<!--Products heading-->
+<div id = "Heading-lock">
+<h2>Discover Store</h2>
+</div>
+<div class="offer-container">
+<!--offers 1-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Fitness_Model_Britt_2007.JPG" alt="Female fitness clothes" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Ladies fitness range</p>
+<p><s>Price: was R320.95</s></p>
+<p style="font-weight: bold;">Now R120.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 2-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/A_classic_Black_pair_of_Converse_All_Stars_resting_on_the_Black_%26_White_Ed._Shoebox_%281998-2002%29.JPG" alt="Female fitness clothes" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Sneakers</p>
+<p style="font-weight: bold;">From R1100.00</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div><!--offers 3-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/2c/Ladies%27_ballroom_shoes%2C_Tango_Shoes_2.jpg" alt="Female fitness clothes" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Ladies Shoes</p>
+<p style="font-weight: bold;">From R350.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div><!--offers 4-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/9d/Nano_Original_Facebook.jpg" alt="Female fitness clothes" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Train like a pro</p>
+<p>From as little as</p>
+<p style="font-weight: bold;">Now R2500.00</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div><!--offers 5-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7c/Apple_TV_2nd_Generation_back.jpg" alt="apple Tv" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Apple Device</p>
+<p style="font-weight: bold;">From R2220.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 6-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/90/Sony-PlayStation-3-CECHA01-wController-L.jpg" alt="Games" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Games</p>
+<p><s>Price: was R15000.95</s></p>
+<p style="font-weight: bold;">Now R5000.99</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 7-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Nokia_N1_tablet.jpg" alt="N1 Tablet" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Mobile</p>
+<p><s>Price: was R5030.95</s></p>
+<p style="font-weight: bold;">From R1500.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 8-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Connect_Robotics_Delivery_Drone.jpg" alt="Drones" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Drones</p>
+<p><s>Price: was R20000</s></p>
+<p style="font-weight: bold;">Now R12000.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 9-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/7/74/Greek_-_Necklace_with_Butterfly_Pendant_-_Walters_57386.jpg" alt="Female range" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>For her</p>
+<p style="font-weight: bold;">From R22000.95</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 10-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Kitchen_design_at_a_store_in_NJ_5.jpg" alt="Kitchen" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Kitchen</p>
+<p><s>Price: was R13320.95</s></p>
+<p style="font-weight: bold;">From R5503.98</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 11-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Nikon_D200_front_%28aka%29.jpg" alt="Nikon" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>Cameras</p>
+<p><s>Price: was R15000.00</s></p>
+<p style="font-weight: bold;">Now R13000.00</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--offers 12-->
+<div class="offer-box">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/Nascarphx16.jpg" alt="Tires" style="width:200px;height:250px;">
+<div class="offer-transparent">
+<div class ="offer-features">
+<p>For Him</p>
+<p style="font-weight: bold;">Now R5000.00</p>
+</div>
+</div>
+<div class= "cart">
+<input type="button" value="Add to cart">
+</div>
+</div>
+<!--end of offers-->
+</div>
+
+</div>
+
+<div id="footer">
+<div class= "footer-container">
+<div class="footer_heading_1">
+<center>
+<h5>Get to Know Us</h5>
+<ul>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">About Store</a></li>
+<li><a href="#">Investor Relations</a></li>
+<li><a href="#">Store Devices</a></li>
+</ul>
+</center>
+</div>
+<div class="footer_heading_2">
+<center>
+<h5>Make Money with Us</h5>
+<ul>
+<li><a href="#">Sell on Store</a></li>
+<li><a href="#">Sell Your Services on Store</a></li>
+<li><a href="#">Sell on Store Business</a></li>
+<li><a href="#">Sell Your Apps on Store</a></li>
+<li><a href="#">Become an Affiliate</a></li>
+<li><a href="#">Advertise Your Products</a></li>
+<li><a href="#">Self-Publish with Us</a></li>
+<li><a href="#">> See all</a></li>
+</ul></center>
+</div>
+<div class="footer_heading_3">
+<center>
+<h5>Store Payment Products</h5>
+<ul>
+<li><a href="#">Store Business Card</a></li>
+<li><a href="#">Shop with Points</a></li>
+<li><a href="#">Reload Your Balance</a></li>
+<li><a href="#">Store Currency Converter</a></li>
+</ul>
+</center>
+</div>
+<div class="footer_heading_4">
+<center><h5>Let Us Help You</h5>
+<ul>
+<li><a href="#">Your Account</a></li>
+<li><a href="#">Your Orders</a></li>
+<li><a href="#">Shipping Rates & Policies</a></li>
+<li><a href="#">Returns & Replacements</a></li>
+<li><a href="#">Manage Your Content and Devices</a></li>
+<li><a href="#">Store Assistant</a></li>
+<li><a href="#">Help</a></li>
+</ul></center>
+</div>
+<div class="footer_heading_5">
+<center><h5>Social</h5>
+<ul>
+<li><a href="#">Instagram</a></li>
+<li><a href="#">Linkedin</a></li>
+<li><a href="#">Tweeter</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Google+</a></li>
+<li><a href="#">YouTube</a></li>
+
+</ul></center>
+</div>
+</div>
+</div>
+</div>
+<!--script for images-->
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>					
+</body>
+</html>

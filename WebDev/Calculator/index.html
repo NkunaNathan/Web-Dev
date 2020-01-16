@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html dir "rtl" lang ="en">
+<head>
+<title>StandardCalculator</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css" />
+<script type='text/javascript' src="index.js"></script>  <!-- Including the scripting file -->
+</head>
+
+<body>
+<h1>Click to hide and view Calculator</h1>
+<strong><h6>Button below</h6></strong>
+<button onclick= "displaycalculator()" style="outline: 3px solid rgb(67,0,37); cursor:pointer;"> calculator </button>
+<div id="Calculator">
+	<form name = "calculatorapp">
+		<input class = "userText" type ="text" name = "userInput" const value = "0" style = "width: 209.7px; text-align: right;" readonly = true/>
+		</br>
+		<input class = "button" type = "button" name="AC" style = "width: 50px" value = "AC" onclick = "restartCalculator()" />
+		<input class = "button" type= "button"  name="+/-" style = "width: 50px" value = "+/-" onclick />
+		<input class = "button" type = "button" name = "percent" style = "width: 50px" value = "%" onclick/>
+		<input class = "button" type = "button" name = "div" style = "width: 50px" value = "/" onclick = "inputValues('/')" />
+		<br>
+		<input class = "button" type = "button" name = "seven" style= "width: 50px" value= "7" onclick = "inputValues('7')"/>
+		<input class = "button" type = "button" name = "eight" style = "width: 50px" value = "8" onclick = "inputValues('8')" />
+		<input class = "button" type = "button" name = "nine" style = "width: 50px" value = "9" onclick = "inputValues('9')" />
+		<input class = "button" type = "button" name = "multiple" style = "width: 50px" value = "*" onclick = "inputValues('*')" />
+		<br>
+		<input class = "button" type = "button" name = "four" style = "width: 50px" value = "4" onclick = "inputValues('4')" />
+		<input class = "button" type = "button" name = "five" style = "width: 50px" value = "5" onclick = "inputValues('5')" />
+		<input class = "button" type = "button" name = "six" style = "width: 50px" value = "6" onclick = "inputValues('6')" />
+		<input class = "button" type = "button" name = "subtract" style = "width: 50px" value = "-" onclick = "inputValues('-')" />
+		<br>
+		<input class = "button" type = "button" name = "one" style = "width: 50px" value = "1" onclick = "inputValues('1')" />
+		<input class = "button" type = "button" name = "two" style = "width: 50px" value = "2" onclick = "inputValues('2')" />
+		<input class = "button" type = "button" name = "three" style = "width: 50px" value = "3" onclick = "inputValues('3')" />
+		<input class = "button" type = "button" name = "add" style = "width: 50px" value = "+" onclick = "inputValues('+')" />
+		<br>
+		<input class = "button" type = "button" name = "zero" style = "width: 50px" value = "0" onclick = "inputValues('0')" />
+		<input class = "button" type = "button" name = "point" style = "width: 50px" value = "." onclick = "inputValues('.')" />
+		<input class = "button" type = "button" style = "width: 104.79px" value = "=" onclick = "varResults()">
+	</form>
+</div>
+<footer>@Nkhuna</footer>
+
+</body>
+</html>

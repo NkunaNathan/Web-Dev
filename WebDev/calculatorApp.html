@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html dir "rtl" lang ="en">
+<head>
+<title>StandardCalculator</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+
+@media screen and (max-width: 480px);
+@media screen and (max-width: 1024px);
+@media screen and (max-width: 48.75em){
+div.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}}
+h1{
+  float: left;
+  width: 20%;
+  height: 350px;
+  text-align: center;
+  background-color: Magenta;
+}
+div#Calculator{
+  width: 44.2%;
+  height: auto;
+  padding: 45px
+  text-align: center;
+  background-color: red transparent;
+  font:Cabin Sketch;
+  border: solid thin black transparent;
+  cursor:default;
+}
+
+body{
+	font-family: Comic Sans MS;
+	background-color: Magenta;
+}
+.button{
+  background-color: gray transparent;
+  text-shadow: rgb(0,0,0) 4px 2px 6px;
+  border-radius: 10px;
+  cursor:pointer;
+  
+}
+input.userText:hover{color: mediumturquoise;}
+input.button:active{color:Magenta;}
+input.button:focus{color:orange;}
+input.button:hover{color:white;}
+.userText{
+	background-color: wheat;
+	cursor:pointer;
+}
+</style>
+</head>
+<script>
+	function displaycalculator(){
+		var doc = document.getElementById("Calculator");
+		if(doc.style.display === "none"){
+			doc.style.display = "block"
+		}else{
+			doc.style.display = "none"
+		}
+	}
+	var defaultvalue = '';
+	function inputValues(calInput){
+		defaultvalue += calInput;
+		document.calculatorapp.userInput.value = defaultvalue;
+		if(eval(defaultvalue) != "Infinity"){
+			defaultvalue = eval(defaultvalue);
+		}
+	}
+	function restartCalculator(){
+		defaultvalue = ''
+		document.calculatorapp.userInput.value = '0';
+	}
+	function varResults(){
+		var equalsTo = document.calculatorapp.userInput.value;
+		if(equalsTo){
+			if(eval(equalsTo) != "Infinity"){
+				document.calculatorapp.userInput.value = eval(equalsTo);
+			}else{
+				document.calculatorapp.userInput.value = "Cannot divide by zero"
+			}
+		}
+	}
+</script>
+<body>
+<h1>Click to hide and view Calculator</h1>
+<strong><h6>Button below</h6></strong>
+<button onclick= "displaycalculator()" style="outline: 3px solid rgb(67,0,37); cursor:pointer;"> calculator </button>
+<div id="Calculator">
+	<form name = "calculatorapp">
+		<input class = "userText" type ="text" name = "userInput" const value = "0" style = "width: 209.7px; text-align: right;" readonly = true/>
+		</br>
+		<input class = "button" type = "button" name="AC" style = "width: 50px" value = "AC" onclick = "restartCalculator()" />
+		<input class = "button" type= "button"  name="+/-" style = "width: 50px" value = "+/-" onclick />
+		<input class = "button" type = "button" name = "percent" style = "width: 50px" value = "%" onclick/>
+		<input class = "button" type = "button" name = "div" style = "width: 50px" value = "/" onclick = "inputValues('/')" />
+		<br>
+		<input class = "button" type = "button" name = "seven" style= "width: 50px" value= "7" onclick = "inputValues('7')"/>
+		<input class = "button" type = "button" name = "eight" style = "width: 50px" value = "8" onclick = "inputValues('8')" />
+		<input class = "button" type = "button" name = "nine" style = "width: 50px" value = "9" onclick = "inputValues('9')" />
+		<input class = "button" type = "button" name = "multiple" style = "width: 50px" value = "*" onclick = "inputValues('*')" />
+		<br>
+		<input class = "button" type = "button" name = "four" style = "width: 50px" value = "4" onclick = "inputValues('4')" />
+		<input class = "button" type = "button" name = "five" style = "width: 50px" value = "5" onclick = "inputValues('5')" />
+		<input class = "button" type = "button" name = "six" style = "width: 50px" value = "6" onclick = "inputValues('6')" />
+		<input class = "button" type = "button" name = "subtract" style = "width: 50px" value = "-" onclick = "inputValues('-')" />
+		<br>
+		<input class = "button" type = "button" name = "one" style = "width: 50px" value = "1" onclick = "inputValues('1')" />
+		<input class = "button" type = "button" name = "two" style = "width: 50px" value = "2" onclick = "inputValues('2')" />
+		<input class = "button" type = "button" name = "three" style = "width: 50px" value = "3" onclick = "inputValues('3')" />
+		<input class = "button" type = "button" name = "add" style = "width: 50px" value = "+" onclick = "inputValues('+')" />
+		<br>
+		<input class = "button" type = "button" name = "zero" style = "width: 50px" value = "0" onclick = "inputValues('0')" />
+		<input class = "button" type = "button" name = "point" style = "width: 50px" value = "." onclick = "inputValues('.')" />
+		<input class = "button" type = "button" style = "width: 104.79px" value = "=" onclick = "varResults()">
+	</form>
+</div>
+<footer>@Nkhuna</footer>
+
+</body>
+</html>

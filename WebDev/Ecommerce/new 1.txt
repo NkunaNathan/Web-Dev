@@ -1,0 +1,35 @@
+/*
+#user-menu{
+	width:100%;
+	float:right;
+	margin-top:-43px;
+	border: 1px solid red;
+	height: 37px;
+	background-color: black;
+}
+
+#user-menu li{
+	border-radius: 10px;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+	display: button;
+	width: 10px;
+	line-height: 20px;
+	float:left;
+	margin-left:130px;
+	font-size: 14px;
+}
+
+#user-menu li:hover {
+  background: red;
+  background: transparent;
+  transition: all .5s ease;
+  font-size: 20px;
+  color: red;
+}
+
+#user-menu li a{
+  color: white;
+  text-decoration: none;
+}*/
